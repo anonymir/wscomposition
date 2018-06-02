@@ -1,0 +1,5 @@
+c:\users\anonymir\documents\visual studio 2012\Projects\PFE-COMPOSITION\PFE-COMPOSITION\bin\PFE-COMPOSITION.dll
+c:\users\anonymir\documents\visual studio 2012\Projects\PFE-COMPOSITION\PFE-COMPOSITION\bin\PFE-COMPOSITION.pdb
+c:\users\anonymir\documents\visual studio 2012\Projects\PFE-COMPOSITION\PFE-COMPOSITION\obj\Debug\PFE-COMPOSITION.csprojResolveAssemblyReference.cache
+c:\users\anonymir\documents\visual studio 2012\Projects\PFE-COMPOSITION\PFE-COMPOSITION\obj\Debug\PFE-COMPOSITION.dll
+c:\users\anonymir\documents\visual studio 2012\Projects\PFE-COMPOSITION\PFE-COMPOSITION\obj\Debug\PFE-COMPOSITION.pdb

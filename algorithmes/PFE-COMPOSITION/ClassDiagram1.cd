@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PFE_COMPOSITION.Adresse" Collapsed="true">
+    <Position X="5.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAARAAAAAAAAACAAAAAAAAAAAAAQAAAAAAAAIAAAgAA=</HashCode>
+      <FileName>Classes\Adresse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PFE_COMPOSITION.Composition" Collapsed="true">
+    <Position X="0.5" Y="9.75" Width="1.5" />
+    <Members>
+      <Property Name="corpus" Hidden="true" />
+      <Property Name="requete" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAACAAACAAAAAAIgAAAACAEQAEAAAAAAAAAAgKCAABA=</HashCode>
+      <FileName>Classes\Composition.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="corpus" />
+      <Property Name="requete" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="relations" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="PFE_COMPOSITION.Concept" Collapsed="true">
+    <Position X="0.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Classes\Concept.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PFE_COMPOSITION.Corpus">
+    <Position X="3.25" Y="10.75" Width="1.5" />
+    <Members>
+      <Property Name="allConcepts" Hidden="true" />
+      <Property Name="hc" Hidden="true" />
+      <Property Name="hs" Hidden="true" />
+      <Property Name="hsc" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAEgAAEAAAAAAAAQCAAAAAAAAAAAAABAMAAAAIAAAAA=</HashCode>
+      <FileName>Classes\Corpus.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="hsc" />
+      <Property Name="hc" />
+      <Property Name="hs" />
+      <Property Name="allConcepts" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="services" />
+      <Property Name="concepts" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="PFE_COMPOSITION.Agregation" Collapsed="true">
+    <Position X="0.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Agregation.cs</FileName>
+      <NewMemberFileName>Classes\Matching.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PFE_COMPOSITION.Relation">
+    <Position X="0.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAgAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Relation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PFE_COMPOSITION.Requete" Collapsed="true">
+    <Position X="3.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAIAAAAAAAAAAAAAAAAACAAAABAAAAAAAgAAAAA=</HashCode>
+      <FileName>Classes\Requete.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PFE_COMPOSITION.Service">
+    <Position X="5.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAACAAAABAAAAAAAAAAAgA=</HashCode>
+      <FileName>Classes\Service.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PFE_COMPOSITION.ResultsComposition">
+    <Position X="8" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAkAAAiAAAAAAAABBAACAAAAECA=</HashCode>
+      <FileName>Results\ResultsComposition.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="compositions" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="PFE_COMPOSITION.ResultsDecouverte" Collapsed="true">
+    <Position X="5.75" Y="4.25" Width="1.5" />
+    <Members>
+      <Property Name="services" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAIAAACA=</HashCode>
+      <FileName>Results\ResultsDecouverte.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="services" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PFE_COMPOSITION.ServiceDecouverte" Collapsed="true">
+    <Position X="5.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAYAAAAAAAAAAQAAAEAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\ServiceDecouverte.asmx.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="results" />
+      <Field Name="requete" />
+      <Field Name="matcher" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PFE_COMPOSITION.ServiceOrchestration" Collapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgACAAAQAIAAAA=</HashCode>
+      <FileName>Services\ServiceOrchestration.asmx.cs</FileName>
+      <NewMemberFileName>Services\ServiceSelection.asmx.cs</NewMemberFileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="serviceSelection" />
+      <Field Name="results" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PFE_COMPOSITION.ServiceSelection" Collapsed="true">
+    <Position X="3.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQQAAAAAAgACAAAQAAAAAA=</HashCode>
+      <FileName>Services\ServiceSelection.asmx.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="agreagation" />
+      <Field Name="results" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PFE_COMPOSITION.Matching" Collapsed="true">
+    <Position X="0.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Classes\Matching.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PFE_COMPOSITION.ResultsSelection">
+    <Position X="3.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Results\ResultsSelection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PFE_COMPOSITION.ResultsOrchestration">
+    <Position X="0.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Results\ResultsOrchestration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PFE_COMPOSITION.ServiceCompositionP" Collapsed="true">
+    <Position X="5.75" Y="7.75" Width="1.5" />
+    <Members>
+      <Field Name="servicesPertinants" Hidden="true" />
+      <Field Name="solutions" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAADAABQAAAQAAAgEBBAAgEACAARAIhAAAAAAAhAAIA=</HashCode>
+      <FileName>Services\ServiceCompositionP.asmx.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="corpus" />
+      <Field Name="requete" />
+      <Field Name="results" />
+      <Field Name="serviceDecouverte" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
